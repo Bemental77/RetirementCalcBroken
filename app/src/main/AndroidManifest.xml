@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OddOrEven">
         <activity
-            android:name=".OddEvenResultActivity"
+            android:name=".RetirementActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

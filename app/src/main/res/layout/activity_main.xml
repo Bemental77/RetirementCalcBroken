@@ -16,21 +16,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView_OddEvenLabel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Enter your age:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_OddEven2"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:ems="30"
+            android:inputType="textPersonName"
+            android:text="@string/plainText_oddeven"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="4dp" />
+
         <TextView
             android:id="@+id/textView_OddEvenLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Enter a number:"
+            android:text="Enter the year you wish to retire:"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editText_OddEven"
             android:layout_width="166dp"
             android:layout_height="46dp"
-            android:ems="10"
+            android:ems="2050"
             android:inputType="textPersonName"
             android:text="@string/plainText_oddeven"
             tools:layout_editor_absoluteX="146dp"

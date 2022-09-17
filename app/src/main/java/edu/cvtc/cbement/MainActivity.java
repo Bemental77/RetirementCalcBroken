@@ -13,6 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "edu.cvtc.ewackwitz.OddOrEven.MainActivity";
     public static final String ODD_EVEN_MESSAGE = TAG + ".ODD_EVEN_MESSAGE";
+    public static final String REQ_RETIREMENT = TAG + ".REQ_RETIREMENT";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
                 try {
                     Integer value = Integer.parseInt(oddEvenText.getText().toString());
-                    Intent intent = new Intent(view.getContext(), OddEvenResultActivity.class);
-
+                    Integer valueRetieremnt = Integer.parseInt(/*fuck*/.getText.toString())
+                    Intent intent = new Intent(view.getContext(), RetirementActivity.class);
+                    intent.putExtra(REQ_RETIREMENT, value);
                     intent.putExtra(ODD_EVEN_MESSAGE, value);
                     view.getContext().startActivity(intent);
                 } catch (NumberFormatException e) {
