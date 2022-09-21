@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     Integer valueRetirement = Integer.parseInt(retirementText.getText().toString());
                     Intent intent = new Intent(view.getContext(), RetirementActivity.class);
                     intent.putExtra(REQ_RETIREMENT, value);
-                    intent.putExtra(ODD_EVEN_MESSAGE, value);
+                    intent.putExtra(ODD_EVEN_MESSAGE, valueRetirement);
                     view.getContext().startActivity(intent);
                 } catch (NumberFormatException e) {
                     Log.d(TAG, "Invalid input entered");

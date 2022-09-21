@@ -23,7 +23,7 @@ public class RetirementActivity extends AppCompatActivity {
         Integer yearsUntil = year + calculatedRetirementYear;
         TextView textView = this.findViewById(R.id.textViewOddEvenResult);
 
-        textView.setText("reqRetirementAge " + reqRetirementAge.toString()  + " currentAge " + currentAge.toString() + "You have " + calculatedRetirementYear.toString() + " years until you can retire. It's " + year + ", so you can retire in " + yearsUntil);
+        textView.setText("You have " + calculatedRetirementYear.toString() + " years until you can retire. It's " + year + ", so you can retire in " + yearsUntil);
 
     }
 
