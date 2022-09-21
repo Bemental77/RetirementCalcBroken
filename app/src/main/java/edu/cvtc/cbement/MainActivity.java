@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "edu.cvtc.ewackwitz.OddOrEven.MainActivity";
+    private static final String TAG = "edu.cvtc.cbement.RetirementCalculator.MainActivity";
     public static final String ODD_EVEN_MESSAGE = TAG + ".ODD_EVEN_MESSAGE";
     public static final String REQ_RETIREMENT = TAG + ".REQ_RETIREMENT";
     @Override
@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "Button Clicked");
-                EditText oddEvenText =
-                        ((View)view.getParent()).findViewById(R.id.editText_OddEven);
+                EditText oddEvenText = ((View)view.getParent()).findViewById(R.id.editText_OddEven);
+                EditText retirementText = ((View)view.getParent()).findViewById(R.id.editText_OddEven2);
 
                 Log.d(TAG, "Input value is: " + oddEvenText.getText().toString());
 
                 try {
                     Integer value = Integer.parseInt(oddEvenText.getText().toString());
-                    Integer valueRetieremnt = Integer.parseInt(/*fuck*/.getText.toString())
+                    Integer valueRetirement = Integer.parseInt(retirementText.getText().toString());
                     Intent intent = new Intent(view.getContext(), RetirementActivity.class);
                     intent.putExtra(REQ_RETIREMENT, value);
                     intent.putExtra(ODD_EVEN_MESSAGE, value);

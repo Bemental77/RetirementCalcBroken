@@ -53,7 +53,7 @@
             android:layout_height="46dp"
             android:ems="2050"
             android:inputType="textPersonName"
-            android:text="@string/plainText_oddeven"
+            android:text="@string/plainText_RetirementYear"
             tools:layout_editor_absoluteX="146dp"
             tools:layout_editor_absoluteY="4dp" />
 
