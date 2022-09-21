@@ -16,11 +16,11 @@ public class RetirementActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_odd_even_result);
         Intent in = this.getIntent();
-        Integer currentAge = in.getIntExtra(MainActivity.ODD_EVEN_MESSAGE, 10);
-        int reqRetirement = in.getIntExtra(MainActivity.REQ_RETIREMENT, 2030);
-        Integer calculatedRetirement = reqRetirement - currentAge;
-        int year = Calendar.getInstance().get(Calendar.YEAR);
-        int yearsUntil = year + calculatedRetirement;
+        Integer currentAge = in.getIntExtra(MainActivity.ODD_EVEN_MESSAGE, 30);
+        Integer reqRetirement = in.getIntExtra(MainActivity.REQ_RETIREMENT, 2030);
+        Integer year = Calendar.getInstance().get(Calendar.YEAR);
+        Integer calculatedRetirement = reqRetirement - year;
+        Integer yearsUntil = year + calculatedRetirement;
         TextView textView = this.findViewById(R.id.textViewOddEvenResult);
 
         textView.setText("You have " + calculatedRetirement.toString() + " years until you can retire. It's " + year + ", so you can retire in " + yearsUntil);
